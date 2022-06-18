@@ -1,0 +1,46 @@
+@import "../../styles/colors.module.scss";
+@import "../../styles/fonts.module.scss";
+
+.text {
+  @include fontMixin;
+  //Colors
+  &.strongCyan {
+    color: $strongCyan;
+  }
+  &.veryDarkCyan {
+    color: $veryDarkCyan;
+  }
+  &.darkGrayishCyan {
+    color: $darkGrayishCyan;
+  }
+  &.grayishCyan {
+    color: $grayishCyan;
+  }
+  &.lightGrayishCyan {
+    color: $lightGrayishCyan;
+  }
+  &.veryLightGrayishCyan {
+    color: $veryLightGrayishCyan;
+  }
+  &.white {
+    color: $white;
+  }
+  &.dangerColor {
+    color: $dangerColor;
+  }
+
+  //Sizes
+
+  &.small {
+    font-size: $fontSizeSmall;
+  }
+  &.normal {
+    font-size: $fontSizeNormal;
+  }
+  &.h2 {
+    font-size: $fontSizeH2;
+  }
+  &.h0 {
+    font-size: $fontSizeH0;
+  }
+}

@@ -2,9 +2,14 @@
 
 $bold: 700;
 
-$fontSizeSmall: 12px;
-$fontSizeNormal: 14px;
-$fontSizeH3: 18px;
+$fontSizeSmall: 14px;
+$fontSizeNormal: 16px;
 $fontSizeH2: 24px;
+$fontSizeH0: 48px;
 
 $fontMonoSpace: "Space Mono", monospace;
+
+@mixin fontMixin {
+  font-weight: $bold;
+  font-family: $fontMonoSpace;
+}

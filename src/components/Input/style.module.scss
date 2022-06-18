@@ -1,0 +1,58 @@
+@import "../../styles/colors.module.scss";
+@import "../../styles/fonts.module.scss";
+
+.inputContainer {
+  display: flex;
+  border-radius: 5px;
+  gap: 5px;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .inputWrapper {
+    position: relative;
+    .indicator {
+      display: flex;
+      position: absolute;
+      height: fit-content;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 15px;
+    }
+    .input {
+      @include fontMixin;
+      padding: 15px;
+      width: 100%;
+      background-color: $veryLightGrayishCyan;
+      font-size: $fontSizeH2;
+      height: 48px;
+      color: $veryDarkCyan;
+      border-radius: 5px;
+      direction: rtl;
+      box-sizing: border-box;
+      border: 2px solid transparent;
+      transition-duration: 0.1s;
+      &.hasIndicator {
+        padding-left: 35px;
+      }
+      &:focus {
+        border: 2px solid $strongCyan;
+      }
+      &.hasError {
+        border: 2px solid $dangerColor;
+      }
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      &[type="number"] {
+        -moz-appearance: textfield;
+      }
+    }
+  }
+}

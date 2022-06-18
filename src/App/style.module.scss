@@ -1,0 +1,50 @@
+@import "../styles/colors.module.scss";
+.main {
+  background-color: $lightGrayishCyan;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 85px;
+  .formWrapper {
+    height: 480px;
+    width: 922px;
+    .formContainer {
+      display: flex;
+      gap: 35px;
+      & > * {
+        flex: 1;
+      }
+      .form {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .tipSelectorLabel {
+          margin-bottom: 20px;
+        }
+        .optionsList {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 15px;
+        }
+        .customInputField::placeholder {
+          /* Most modern browsers support this now. */
+          opacity: 1;
+          color: $grayishCyan;
+        }
+      }
+      .displayFieldsContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .displayFields {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+      }
+    }
+  }
+}

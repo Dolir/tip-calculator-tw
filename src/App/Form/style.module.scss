@@ -1,0 +1,27 @@
+@import "../../styles/colors.module.scss";
+
+.form {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .tipSelectorLabel {
+    margin-bottom: 20px;
+  }
+  .optionsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    .selected {
+      background-color: $strongCyan;
+      & > * {
+        color: $veryDarkCyan;
+      }
+    }
+  }
+  .customInputField::placeholder {
+    /* Most modern browsers support this now. */
+    opacity: 1;
+    color: $grayishCyan;
+  }
+}
