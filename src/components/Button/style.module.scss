@@ -9,6 +9,7 @@
   cursor: pointer;
   user-select: none;
   transition-duration: 0.1s;
+
   &:hover {
     background-color: $active;
   }
