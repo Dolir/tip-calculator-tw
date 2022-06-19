@@ -54,7 +54,7 @@ function App() {
 
   return (
     <div className={style.main}>
-      <Logo className={style.logo} />
+      {/* <Logo className={style.logo} /> */}
       <div className={style.formWrapper}>
         <Container
           className={style.formContainer}
