@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react"
 import style from "./style.module.scss"
-// import { ReactComponent as Logo } from "src/assets/images/logo.svg"
+import { ReactComponent as Logo } from "src/assets/images/logo.svg"
 
 import { Container } from "src/components/Container"
 import { Text } from "src/components/Text"
@@ -54,7 +54,7 @@ function App() {
 
   return (
     <div className={style.main}>
-      {/* <Logo className={style.logo} /> */}
+      <Logo className={style.logo} />
       <div className={style.formWrapper}>
         <Container
           className={style.formContainer}
