@@ -25,12 +25,12 @@
       @include fontMixin;
       padding: 15px;
       width: 100%;
-      background-color: $veryLightGrayishCyan;
+      background-color: $neutral-5;
       font-size: $fontSizeH2;
       height: 48px;
-      color: $veryDarkCyan;
+      color: $neutral-1;
       border-radius: 5px;
-      direction: rtl;
+      text-align: end;
       box-sizing: border-box;
       border: 2px solid transparent;
       transition-duration: 0.1s;
@@ -38,10 +38,10 @@
         padding-left: 35px;
       }
       &:focus {
-        border: 2px solid $strongCyan;
+        border: 2px solid $primary;
       }
       &.hasError {
-        border: 2px solid $dangerColor;
+        border: 2px solid $danger;
       }
 
       &::-webkit-outer-spin-button,

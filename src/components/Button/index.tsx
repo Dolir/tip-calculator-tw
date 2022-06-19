@@ -1,4 +1,4 @@
-import React, { MouseEvent, PropsWithChildren } from "react"
+import { MouseEvent, PropsWithChildren } from "react"
 import { ColorsType } from "../utils"
 import backgroundStyles from "../styles/backgroundColors.module.scss"
 import style from "./style.module.scss"

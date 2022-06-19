@@ -5,8 +5,17 @@ $darkGrayishCyan: hsl(186, 14%, 43%);
 $grayishCyan: hsl(184, 14%, 56%);
 $lightGrayishCyan: hsl(185, 41%, 84%);
 $veryLightGrayishCyan: hsl(189, 41%, 97%);
+
+//Colors
+
+$primary: $strongCyan;
+
+$neutral-1: $veryDarkCyan;
+$neutral-2: $darkGrayishCyan;
+$neutral-3: $grayishCyan;
+$neutral-4: $lightGrayishCyan;
+$neutral-5: $veryLightGrayishCyan;
+
 $white: hsl(0, 0%, 100%);
-
-$activeColor: #9fe8df;
-
-$dangerColor: #b47c6d;
+$active: #9fe8df;
+$danger: #b47c6d;

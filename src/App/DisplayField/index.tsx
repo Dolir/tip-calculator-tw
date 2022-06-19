@@ -1,5 +1,5 @@
-import { ReactNode } from "react"
 import { Text } from "src/components/Text"
+import { nFormatter } from "src/utils"
 import style from "./style.module.scss"
 
 type TextFieldProp = {
@@ -13,12 +13,12 @@ export const DisplayField = ({ value, label, subLabel }: TextFieldProp) => {
     <div className={style.container}>
       <div>
         <Text>{label}</Text>
-        <Text size="small" color="grayishCyan">
+        <Text size="small" color="neutral-3">
           {subLabel}
         </Text>
       </div>
-      <Text size="h0" color="strongCyan">
-        ${value.toFixed(2)}
+      <Text size="h0" color="primary" className={style.valueField}>
+        ${nFormatter(value)}
       </Text>
     </div>
   )

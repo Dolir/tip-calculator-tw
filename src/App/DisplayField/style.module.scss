@@ -1,5 +1,15 @@
+@import "../../styles/adaptivity.module.scss";
+@import "../../styles/fonts.module.scss";
+
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .valueField {
+    max-width: 245px;
+    @include mediaDown(lg) {
+      flex-direction: column;
+      font-size: $fontSizeH1;
+    }
+  }
 }

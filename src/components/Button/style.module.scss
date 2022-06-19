@@ -10,7 +10,7 @@
   user-select: none;
   transition-duration: 0.1s;
   &:active {
-    background-color: $activeColor;
+    background-color: $active;
   }
 
   &:disabled {
