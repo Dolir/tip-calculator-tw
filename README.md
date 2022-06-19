@@ -39,7 +39,8 @@ Mobile:
 
 ### Links
 
-- Live Site URL: [https://dolir.github.io/tip-calculator-tw/](https://dolir.github.io/tip-calculator-tw/)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/tip-calculator-using-scss-color-palette-mixins-custom-ui-kit-2dlzeBmMOz)
+- Live Site URL: [Github pages Live](https://dolir.github.io/tip-calculator-tw/)
 
 ## My process
 
