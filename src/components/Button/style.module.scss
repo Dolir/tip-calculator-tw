@@ -9,8 +9,8 @@
   cursor: pointer;
   user-select: none;
   transition-duration: 0.1s;
-  &:active {
-    background-color: $activeColor;
+  &:hover {
+    background-color: $active;
   }
 
   &:disabled {

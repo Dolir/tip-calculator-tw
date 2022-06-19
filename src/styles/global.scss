@@ -18,9 +18,13 @@ input {
 ul {
   list-style: none;
 }
+html {
+  height: 100%;
+}
+
 body {
   height: 1px;
-  min-height: 100vh;
+  min-height: 100%;
   width: 100%;
 }
 #root {

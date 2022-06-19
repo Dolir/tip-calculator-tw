@@ -1,48 +1,64 @@
 @import "../styles/colors.module.scss";
+@import "../styles/adaptivity.module.scss";
+
 .main {
-  background-color: $lightGrayishCyan;
-  height: 100%;
+  background-color: $neutral-4;
+  height: fit-content;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 85px;
+  @include mediaDown(lg) {
+    gap: 8vh;
+  }
+  @include mediaDown(sm) {
+    gap: 5vh;
+    justify-content: flex-end;
+  }
+  .logo {
+    margin-top: 30px;
+  }
   .formWrapper {
     height: 480px;
-    width: 922px;
-    .formContainer {
-      display: flex;
-      gap: 35px;
-      & > * {
-        flex: 1;
+    width: 949px;
+
+    @include mediaDown(lg) {
+      width: auto;
+      height: auto;
+      margin: 0 50px;
+    }
+    @include mediaDown(sm) {
+      margin: 0;
+    }
+    .outerContainer {
+      @include mediaDown(sm) {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
       }
-      .form {
-        padding: 15px;
+      .formContainer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .tipSelectorLabel {
-          margin-bottom: 20px;
+        gap: 35px;
+        & > * {
+          flex: 1;
         }
-        .optionsList {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          gap: 15px;
-        }
-        .customInputField::placeholder {
-          /* Most modern browsers support this now. */
-          opacity: 1;
-          color: $grayishCyan;
-        }
-      }
-      .displayFieldsContainer {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        .displayFields {
-          display: flex;
+
+        @include mediaDown(lg) {
           flex-direction: column;
-          gap: 15px;
+        }
+        .displayFieldsContainer {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          @include mediaDown(lg) {
+            gap: 40px;
+          }
+          .displayFields {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
         }
       }
     }

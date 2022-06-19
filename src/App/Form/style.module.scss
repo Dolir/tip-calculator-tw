@@ -1,27 +1,39 @@
 @import "../../styles/colors.module.scss";
+@import "../../styles/adaptivity.module.scss";
 
 .form {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  .tipSelectorLabel {
-    margin-bottom: 20px;
-  }
-  .optionsList {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
-    .selected {
-      background-color: $strongCyan;
-      & > * {
-        color: $veryDarkCyan;
+  .formContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    @include mediaDown(lg) {
+      gap: 30px;
+      padding: 5px;
+    }
+    .tipSelectorLabel {
+      margin-bottom: 20px;
+    }
+    .optionsList {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 15px;
+      @include mediaDown(lg) {
+        grid-template-columns: 1fr 1fr;
+      }
+      .selected {
+        background-color: $primary;
+        & > * {
+          color: $neutral-1;
+        }
       }
     }
-  }
-  .customInputField::placeholder {
-    /* Most modern browsers support this now. */
-    opacity: 1;
-    color: $grayishCyan;
+    .customInputField::placeholder {
+      opacity: 1;
+      color: $neutral-3;
+      text-align: center;
+    }
   }
 }

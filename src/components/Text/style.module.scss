@@ -4,29 +4,29 @@
 .text {
   @include fontMixin;
   //Colors
-  &.strongCyan {
-    color: $strongCyan;
+  &.primary {
+    color: $primary;
   }
-  &.veryDarkCyan {
-    color: $veryDarkCyan;
+  &.neutral-1 {
+    color: $neutral-1;
   }
-  &.darkGrayishCyan {
-    color: $darkGrayishCyan;
+  &.neutral-2 {
+    color: $neutral-2;
   }
-  &.grayishCyan {
-    color: $grayishCyan;
+  &.neutral-3 {
+    color: $neutral-3;
   }
-  &.lightGrayishCyan {
-    color: $lightGrayishCyan;
+  &.neutral-4 {
+    color: $neutral-4;
   }
-  &.veryLightGrayishCyan {
-    color: $veryLightGrayishCyan;
+  &.neutral-5 {
+    color: $neutral-5;
   }
   &.white {
     color: $white;
   }
-  &.dangerColor {
-    color: $dangerColor;
+  &.danger {
+    color: $danger;
   }
 
   //Sizes
@@ -40,7 +40,18 @@
   &.h2 {
     font-size: $fontSizeH2;
   }
+  &.h1 {
+    font-size: $fontSizeH1;
+  }
   &.h0 {
     font-size: $fontSizeH0;
+  }
+
+  //utils
+
+  &.hideOverflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 }
