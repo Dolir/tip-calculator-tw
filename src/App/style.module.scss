@@ -19,16 +19,11 @@
   }
   .logo {
     margin-top: 30px;
-    position: absolute;
-    top: 125px;
-    @include mediaDown(lg) {
-      position: unset;
-    }
   }
   .formWrapper {
     height: 480px;
     width: 949px;
-    margin-top: 70px;
+    margin-bottom: 50px;
     @include mediaDown(lg) {
       width: auto;
       height: auto;
